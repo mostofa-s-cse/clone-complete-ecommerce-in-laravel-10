@@ -206,7 +206,7 @@
 
                         </div>
                         <div class="row">
-                            <div class="col-md-12 justify-content-center d-flex">
+                            <div class="col-md-12 justify-content-center d-flex pagination">
                                 {{$products->appends($_GET)->links()}}
                             </div>
                           </div>
@@ -372,6 +372,12 @@
 <style>
     .pagination{
         display:inline-flex;
+    }
+    svg{
+        width: 13px;
+    }
+    nav p {
+        display: none;
     }
     .filter_button{
         /* height:20px; */
